@@ -175,30 +175,44 @@ footer span {
 /***** TABLET *****/
 @media all and (min-width: 768px) {
 	.bottom-section {
-		border-top: 3px solid #77a466;
-		flex-basis: 300px;
+		border-top: 1px solid #eee;;
+		align-items: flex-start;
+		justify-content: space-between;
 	}
-	.section-one {
-		display: flex;
-		align-items: center;
- 		justify-content: center;
-	}
-	.section-two {
-		border-left: 3px solid #77a466;
-		border-right: 3px solid #77a466;
-		display: flex;
-		align-items: center;
- 		justify-content: center;
-	}
+	.section-one,
+	.section-two,
 	.section-three {
 		display: flex;
 		align-items: center;
- 		justify-content: center;
+		flex-basis: 30%;
+		flex-flow: row wrap;
+ 		justify-content: flex-start;
 	}
-
+	.section-two {
+		border-left: 1px solid #eee;;
+		border-right: 1px solid #eee;;
+		padding: 0 20px;
+	}
 }
 
 /***** DESKTOP *****/
 @media all and (min-width: 768px) {
-
+	header {
+		justify-content: space-between;
+	}
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+	header nav {
+		border-top: none;
+		width: 40%;
+	}
+	
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
 }
